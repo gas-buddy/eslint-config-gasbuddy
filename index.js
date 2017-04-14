@@ -9,6 +9,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement'
     ],
+    'react/jsx-filename-extension': [1, { "extensions": ['.js', '.jsx'] }],
     'no-param-reassign': [
       2,
       {
