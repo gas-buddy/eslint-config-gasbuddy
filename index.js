@@ -31,6 +31,7 @@ module.exports = {
       'WithStatement',
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/no-did-update-set-state': false,
     'no-param-reassign': [
       2,
       {
