@@ -22,6 +22,7 @@ module.exports = {
   extends: 'airbnb',
   rules: {
     'jsx-a11y/href-no-hash': 'off',
+    'object-curly-newline': 'off',
     'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
     'import/prefer-default-export': [0],
     'no-restricted-syntax': [
