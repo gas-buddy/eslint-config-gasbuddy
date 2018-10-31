@@ -21,6 +21,13 @@ module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
   rules: {
+    'max-len': ['error', 160, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
     'jsx-a11y/href-no-hash': 'off',
     'object-curly-newline': 'off',
     'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
