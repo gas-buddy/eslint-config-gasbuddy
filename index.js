@@ -20,7 +20,10 @@ monkeypatch(require('module').prototype, 'require', function (original, modname)
 module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
+  plugins: ['babel'],
   rules: {
+    camelcase: 0,
+    'babel/camelcase': ['error', { properties: 'never' }],
     'max-len': ['error', 160, 2, {
       ignoreUrls: true,
       ignoreComments: false,
