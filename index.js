@@ -21,7 +21,7 @@ monkeypatch(require('module').prototype, 'require', function (original, modname)
 module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
-  plugins: ['babel'],
+  plugins: ['babel', 'react-hooks'],
   rules: {
     camelcase: 0,
     'babel/camelcase': ['error', { properties: 'never' }],
