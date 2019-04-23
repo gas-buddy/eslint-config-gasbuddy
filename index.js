@@ -8,6 +8,7 @@ var replacements = {
   'eslint-plugin-jsx-a11y': require('eslint-plugin-jsx-a11y'),
   'eslint-plugin-react': require('eslint-plugin-react'),
   'eslint-plugin-import': require('eslint-plugin-import'),
+  'eslint-plugin-react-hooks': require('eslint-plugin-react-hooks'),
 };
 
 monkeypatch(require('module').prototype, 'require', function (original, modname) {
@@ -43,6 +44,8 @@ module.exports = {
     ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/no-did-update-set-state': false,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'no-param-reassign': [
       2,
       {
