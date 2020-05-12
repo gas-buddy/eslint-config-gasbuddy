@@ -5,6 +5,7 @@
 var monkeypatch = require('monkeypatch');
 
 var replacements = {
+  'eslint-plugin-node': require('eslint-plugin-node'),
   'eslint-plugin-jsx-a11y': require('eslint-plugin-jsx-a11y'),
   'eslint-plugin-react': require('eslint-plugin-react'),
   'eslint-plugin-import': require('eslint-plugin-import'),
