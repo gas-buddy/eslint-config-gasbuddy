@@ -22,6 +22,9 @@ module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
   plugins: ['babel', 'react-hooks'],
+  globals: {
+    BigInt: true
+  },
   rules: {
     camelcase: 0,
     'babel/camelcase': ['error', { properties: 'never' }],
