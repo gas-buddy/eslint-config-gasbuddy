@@ -45,6 +45,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'arrow-parens': [2, 'as-needed', { 'requireForBlockBody': true }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/no-did-update-set-state': 0,
     'react-hooks/rules-of-hooks': 'error',
