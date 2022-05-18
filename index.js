@@ -19,7 +19,7 @@ monkeypatch(require('module').prototype, 'require', function (original, modname)
 });
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   extends: 'airbnb',
   plugins: ['babel', 'react-hooks'],
   globals: {
