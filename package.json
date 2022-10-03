@@ -1,25 +1,21 @@
 {
   "name": "eslint-config-gasbuddy",
-  "version": "6.1.0",
-  "description": "Javascript standards for GasBuddy",
+  "version": "7.0.0",
+  "description": "Javascript and Typescript standards for GasBuddy",
   "main": "index.js",
   "keywords": [
     "gasbuddy",
     "lint",
     "javascript",
-    "es2016"
+    "typescript"
   ],
   "author": "GasBuddy",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "monkeypatch": "^1.0.0"
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0"
   }
 }
