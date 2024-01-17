@@ -9,23 +9,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: gas-buddy/yarn-build-action@v5
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          npm-token: ${{ secrets.npm_token }}
-          skip-test: true
-          skip-lint: true
+          node-version-file: .nvmrc
+      - run: yarn
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: gas-buddy/yarn-build-action@v5
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          npm-token: ${{ secrets.npm_token }}
-          skip-test: true
-          skip-lint: true
+          node-version-file: .nvmrc
+          registry-url: https://registry.npmjs.org/
+      - run: yarn
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

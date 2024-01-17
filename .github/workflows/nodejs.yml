@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: gas-buddy/yarn-build-action@v5
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
       with:
-        npm-token: ${{ secrets.npm_token }}
+        node-version-file: .nvmrc
+    - name: npm install, lint, build, and test
+      run: yarn
