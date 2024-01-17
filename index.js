@@ -16,6 +16,14 @@ module.exports = {
       },
       plugins: ['@typescript-eslint'],
     },
+    {
+      files: ['**/*.js', '**/*.jsx'],
+      extends: [
+        'airbnb/base',
+      ],
+      parser: '@babel/eslint-parser',
+      plugins: ['babel', 'react-hooks'],
+    }
   ],
   rules: {
     'import/prefer-default-export': [0],
