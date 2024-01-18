@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gasbuddy",
-  "version": "7.2.0",
+  "version": "7.3.0",
   "description": "Javascript and Typescript standards for GasBuddy",
   "main": "index.js",
   "keywords": [
