@@ -20,7 +20,7 @@ module.exports = {
     {
       files: ['**/*.js', '**/*.jsx'],
       extends: [
-        'airbnb/base',
+        'airbnb-base',
         'plugin:react-hooks/recommended'
       ],
       parser: '@babel/eslint-parser',
