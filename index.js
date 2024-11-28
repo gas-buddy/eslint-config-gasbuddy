@@ -1,30 +1,24 @@
 module.exports = {
   root: true,
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ['airbnb-base'],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: [
         'airbnb-base',
         'airbnb-typescript/base',
-        'plugin:react-hooks/recommended',
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         project: './tsconfig.json'
       },
-      plugins: ['@typescript-eslint', 'react-hooks'],
+      plugins: ['@typescript-eslint'],
     },
     {
       files: ['**/*.js', '**/*.jsx'],
-      extends: [
-        'airbnb-base',
-        'plugin:react-hooks/recommended'
-      ],
+      extends: ['airbnb-base'],
       parser: '@babel/eslint-parser',
-      plugins: ['@babel', 'react-hooks'],
+      plugins: ['@babel'],
     }
   ],
   rules: {
